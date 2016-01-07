@@ -1,0 +1,92 @@
+<html>
+  <head>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script>
+    google.load('visualization', '1', { 'packages': ['map'] });
+    google.setOnLoadCallback(drawMap);
+
+    function drawMap() {
+      var data = google.visualization.arrayToDataTable([
+['geocode.formatted_address','user_name'],
+["Indianapolis, IN, USA","herouxAT"],
+["Indianapolis, IN, USA","Liffick"],
+["Tennessee St, Chandler, IN 47610, USA","RealDubbDugan"],
+["Fort Wayne, IN, USA","babytigger616"],
+["Muncie, IN, USA","TMKelly"],
+["Avon, IN, USA","andrewkunz"],
+["Indianapolis, IN, USA","KaiLizabeth"],
+["Hoosier Land Park, 2641 E 1300 N, Summitville, IN 46070, USA","yaboydcurr"],
+["West Lafayette, IN, USA","alexlbridges"],
+["South Bend, IN, USA","kfuja"],
+["Indianapolis, IN, USA","skovacs19"],
+["Seybert's School For Dogs, 4390 IN-446, Bloomington, IN 47401, USA","BadBeyachiEmm"],
+["Clarksville, IN, USA","1Juice1"],
+["Indianapolis, IN, USA","mrLitke"],
+["Nashville, IN 47448, USA","gtcox15"],
+["Indianapolis, IN, USA","AlliknowismeKB"],
+["Indianapolis, IN, USA","aprilsopinions"],
+["Fort Wayne, IN, USA","SeanJordan18"],
+["Indianapolis, IN, USA","jolaurit"],
+["South Bend, IN, USA","HannahGWright"],
+["Bloomington, IN, USA","cruzgarcia7"],
+["Fort Wayne, IN, USA","jessicagose10"],
+["Bloomington, IN, USA","micahgideon"],
+["Jeffersonville, IN, USA","Sickzombi3"],
+["Indianapolis, IN, USA","cathysvoice"],
+["Bloomington, IN, USA","jibbs91"],
+["Central, IN 47112, USA","lshoweassoc"],
+["Muncie, IN, USA","CoachBurnett"],
+["Hidden Pl Dr, Georgetown, IN 47122, USA","rifqidz"],
+["Westfield, IN, USA","KyleJLittle"],
+["West Lafayette, IN, USA","mgardner20"],
+["South Bend, IN, USA","Donnie15"],
+["Evansville, IN, USA","clayblesch"],
+["La Porte, IN 46350, USA","anthraxdadon"],
+["Anderson, IN, USA","naomieportice"],
+["Terre Haute, IN, USA","wtwonews"],
+["Bloomington, IN, USA","SwutBrah"],
+["Muncie, IN, USA","BCrumes"],
+["West Lafayette, IN, USA","isaacbob"],
+["West Lafayette, IN, USA","andikeptwalking"],
+["Indianapolis, IN, USA","tmjINDskltrd"],
+["Indianapolis, IN, USA","IfIGetAIDSfukIt"],
+["In God's Arms Child Care, 1224 Laurel St, Indianapolis, IN 46203, USA","ALovelyMe"],
+["Muncie, IN, USA","NathanM777"],
+["Lilly Hall of Life Sciences, 915 W State St, West Lafayette, IN 47907, USA","Wolfheinrich"],
+["Indianapolis, IN, USA","LiketheRiver"],
+["Indianapolis, IN, USA","chrisvannoy"],
+["West Lafayette, IN, USA","RachelMWeller"],
+["Indianapolis, IN, USA","bapatrick105"],
+["Avon, IN, USA","jandlray"],
+["Indianapolis, IN, USA","VolumeMack"],
+["Terre Haute, IN, USA","KharismaDaKidd"],
+["Ball State University, 2000 W University Ave, Muncie, IN 47306, USA","BKaws"],
+["Middle Township, IN, USA","itsssBARBIE"],
+["Muncie, IN, USA","megfizer"],
+["Indianapolis, IN, USA","93wibc"],
+["Kokomo, IN, USA","KyleMundell"],
+["Indianapolis, IN, USA","joshmiles"],
+["West Lafayette, IN, USA","JasonJ2688"],
+["Scotland Cemetery, Madison, IN 47250, USA","Clovercelt"],
+["Bloomington, IN, USA","JoshDSchultheis"],
+["Indianapolis, IN, USA","COLLEGEGIIRL10"],
+["Mt Vernon, IN, USA","yellowmello"],
+["Indianapolis, IN, USA","KurtisEMcCoin"],
+["Purdue University, 610 Purdue Mall, West Lafayette, IN 47907, USA","TateNubbs"],
+["Indianapolis, IN, USA","KTFralick"],
+["Indianapolis, IN, USA","adamnevins"],
+["Indianapolis, IN, USA","MoWill100"],
+      ]);
+
+    var options = { showTip: true };
+
+    var map = new google.visualization.Map(document.getElementById('chart_div'));
+
+    map.draw(data, options);
+  };
+  </script>
+  </head>
+  <body>
+    <div id="chart_div"></div>
+  </body>
+</html>
